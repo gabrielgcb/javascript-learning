@@ -1,3 +1,3 @@
 # javascript-learning
 
-Introdução ao JavaScript - estudos iniciais
+Introdução ao JavaScript - Plataforma: Curso em Vídeo
