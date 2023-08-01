@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+    <style>
+        body {
+            text-align: center;
+            height: 95vh;
+        }
+
+        div#bloco {
+            background-color: blue;
+            height: 100px;
+            width: 200px;
+            margin: auto;
+        }
+
+        input {
+            margin: 20px;
+            width: 300px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body onresize="console.log('houve um redicionamento')">
+    <h1>Eventos Javascript</h1>
+    
+    <p id="texto">
+        
+    </p>
+
+    <p>
+        <button onclick="eventoClick()">Clique aqui</button>
+    </p>
+
+    <p>
+        <button ondblclick="eventoDblClick()">Dê um duplo-click aqui</button>
+    </p>
+
+    <div id="bloco" onmouseover="virarVermelho()" onmouseleave="virarAzul()" onmousemove="adicionarTexto()">
+
+    </div>
+
+    <input id="campoTexto" type="text" placeholder="Digite alguma coisa" value="Algum texto aqui" onfocus="limparTexto()" onblur="eventoClick()" onkeydown="teclaPressionada()">
+
+    <div>
+        <select onchange="mudar()" name="" id="itens">
+            <option value="1">valor 1</option>
+            <option value="2">valor 2</option>
+            <option value="3">valor 3</option>
+        </select>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
